@@ -5,10 +5,14 @@ Este proyecto es una aplicación frontend desarrollada con React y Vite, que uti
 
 ## Librerías Utilizadas
 
-- **react-router-dom**: Para la gestión de rutas en la aplicación.
-- **react-bootstrap**: Para utilizar componentes de Bootstrap en React.
-- **bootstrap**: Framework de CSS para un diseño responsivo y moderno.
-- **bootstrap-icons**: Conjunto de iconos para Bootstrap.
+- **react-router-dom**: Para la gestión de rutas en la aplicación.[Documentacion](https://reactrouter.com/de/main/start/tutorial).
+- **react-bootstrap**: Para utilizar componentes de Bootstrap en React.[Documentacion](https://react-bootstrap.github.io/docs/getting-started/introduction).
+- **bootstrap**: Framework de CSS para un diseño responsivo y moderno.[Documentacion](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
+- **bootstrap-icons**: Conjunto de iconos para Bootstrap.[Documentacion](https://icons.getbootstrap.com/).
+Ejemplo icono:
+``` bash
+   <i class="bi bi-facebook"></i>
+``` 
 
 ## Estructura del Proyecto
 
@@ -27,13 +31,13 @@ Antes de comenzar, asegúrate de tener instalado Node.js en tu máquina. Puedes 
 3. Ejecuta el siguiente comando:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-proyecto.git
+   git clone https://github.com/DevWilsonCruz/React_ApiRest_Tutoria_Online.git
     ```
 
 4. Ingresa al directorio del proyecto:
 
   ```bash
-   cd tu-proyecto
+   cd ApiRest_Tutoria_Online
   ```
 
 ## Instalación
