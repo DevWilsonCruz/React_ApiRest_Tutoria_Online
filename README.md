@@ -11,7 +11,7 @@ Este proyecto es una aplicación frontend desarrollada con React y Vite, que uti
 - **bootstrap-icons**: Conjunto de iconos para Bootstrap.[Documentacion](https://icons.getbootstrap.com/).
 Ejemplo icono:
 ``` bash
-   <i class="bi bi-facebook"></i>
+   <i className="bi bi-facebook"></i>
 ``` 
 
 ## Estructura del Proyecto
