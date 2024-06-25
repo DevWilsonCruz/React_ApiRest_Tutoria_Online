@@ -1,0 +1,17 @@
+[
+  {
+    "id":"excellence",
+    "title": "Excelencia",
+    "description": "Alcanza tus metas académicas con tutores de alta calidad. Nos comprometemos a ofrecerte una educación de excelencia con profesionales expertos dedicados a tu éxito."
+  },
+  {
+    "id":"innovation",
+    "title": "Facilidad",
+    "description": "Encuentra y elige tu tutor ideal de manera fácil y rápida. Con una amplia variedad de profesionales a tu disposición, personaliza tu experiencia de aprendizaje según tus necesidades."
+  },
+  {
+    "id":"safety",
+    "title": "Seguridad",
+    "description": "Aprende con total tranquilidad en un entorno seguro. Todos nuestros tutores son rigurosamente verificados para garantizar que recibas la mejor educación de manera confiable y segura."
+  }
+]
