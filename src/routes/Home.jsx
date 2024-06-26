@@ -1,9 +1,9 @@
 import React from "react";
-import IndividualIntervalsExample from "../sections/home/components/carousels/carousel"
-const Home =()=>{
+import HomeSections from "../sections/home/HomeSections"
+const Home =()=>{ 
   return(
     <>
-      <IndividualIntervalsExample/>
+      <HomeSections/>
     </>
   )
 }
