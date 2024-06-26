@@ -1,9 +1,8 @@
 import React from "react";
-import CarouselContainer from "./components/carousels/Carousel"
+import CarouselContainer from "./components/carousels/carousel"
 import dataCarouselAuto from "./data/data-carousel.json"
 import dataCarouselCards from "./data/data-carousel-cards.json"
 import dataQualities from "./data/data-qualities.json"
-
 import { Card, Col,Row } from "react-bootstrap";
 import CardBody from "./components/cards/Card";
 
