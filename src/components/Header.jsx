@@ -15,7 +15,7 @@ const Header =()=>{
           <Navbar.Collapse className="justify-content-end">
             <Nav className="gap-1">
               <Button as={Link} to={"/"} variant="link" className="link-primary link-offset-3 link-underline link-underline-opacity-0"><i className="bi bi-house-fill fst-normal fw-semibold fs-6 align-baseline"> Home</i></Button>
-              <Button as={Link} to={"/"} variant="link" className="link-primary link-offset-3 link-underline link-underline-opacity-0"><i className="bi bi-box-arrow-in-right fst-normal fw-semibold fs-6 align-baseline"> Ingresar</i></Button>
+              <Button as={Link} to={"/login"} variant="link" className="link-primary link-offset-3 link-underline link-underline-opacity-0"><i className="bi bi-box-arrow-in-right fst-normal fw-semibold fs-6 align-baseline"> Ingresar</i></Button>
               <Button as={Link} to={"/"} variant="outline-primary"><i className="bi bi-person-fill-add fw-semibold fst-normal fs-6 align-baseline"> Registrarse</i></Button>
             </Nav>
             
