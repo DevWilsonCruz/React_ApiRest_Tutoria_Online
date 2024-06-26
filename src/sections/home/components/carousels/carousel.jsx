@@ -1,21 +1,25 @@
 import React from 'react';
-import {Carousel,Image} from 'react-bootstrap';
-import img1 from '../../assets/Img1-1400x500.png';
-import img2 from '../../assets/Img2-1400x500.png';
+import {Carousel,Row,Card} from 'react-bootstrap';
+import LoadImages from "../../hooks/LoadImages"
+import CardBody from '../cards/Card';
 
-function IndividualIntervalsExample() {
-  return (
-    <> 
-      <Carousel controls={false} data-bs-theme="dark">
-        <Carousel.Item interval={3000}>
-          <Image src={img1} fluid />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-        <Image src={img2} fluid />
-        </Carousel.Item>
+const CarouselContainer=({controls=true,dataImages,fade}) =>{
+  return(
+    <>
+      <Carousel controls={controls} fade={fade} variant='dark'>
+        {
+          dataImages.map((item,index)=>(
+            <Carousel.Item key={index} interval={3000} as={Card} className="rounded-0 border-0">
+              <LoadImages item={item}/>
+              <Card.ImgOverlay className={`d-flex align-items-center mx-5 px-5`}>
+               <CardBody title={item.title} body={item.text}/>
+             </Card.ImgOverlay>
+            </Carousel.Item>
+          ))
+        }
       </Carousel>
     </>
-  );
+  )
 }
 
-export default IndividualIntervalsExample;
+export default CarouselContainer;
