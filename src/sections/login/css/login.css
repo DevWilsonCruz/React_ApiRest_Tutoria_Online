@@ -1,0 +1,6 @@
+@media(1000px >= width){
+  .Img-Icon{
+    visibility: hidden;
+    height: 90vh;
+  }
+}
