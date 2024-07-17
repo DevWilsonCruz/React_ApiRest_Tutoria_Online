@@ -1,9 +1,9 @@
 import React from "react";
 import  LogInSection from "../sections/login/LogInSection";
-const LogIn =()=>{
+const LogIn =({handleLogin, loginToast})=>{
   return(
     <>
-      <LogInSection />
+      <LogInSection handleLogin={handleLogin} loginToast={loginToast}/>
     </>
   )
 }

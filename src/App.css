@@ -1,1 +1,13 @@
+/* Define la animación */
+@keyframes fadeOut {
+  0%   {opacity:1}
+  50%  {opacity:0}
+  100% {opacity:1}
+}
 
+/* Aplica la animación cuando se añade la clase */
+.animating {
+  animation-name: fadeOut;
+  animation-duration:1s;
+  animation-iteration-count: 1s; /* 1s es la duración de la animación, ajusta según sea necesario */
+}
