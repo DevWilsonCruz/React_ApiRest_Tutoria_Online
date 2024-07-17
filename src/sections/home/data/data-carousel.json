@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "alt": "Image 1",
+    "url": "../assets/Img1-1400x500.webp",
+    "title":""
+  },
+  {
+    "id": 2,
+    "alt": "Image 2",
+    "url": "../assets/Img2-1400x500.webp",
+    "title":""
+  },
+  {
+    "id": 3,
+    "alt": "Image 3",
+    "url": "../assets/Img3-1400x500.webp",
+    "title":""
+  }
+]

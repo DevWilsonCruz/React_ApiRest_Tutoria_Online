@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "alt": "Image 1",
+    "url": "../assets/Img-sin-Fondo-1400x500.png",
+    "title":"Misión",
+    "text":"Nuestra misión es transformar la manera en que los estudiantes acceden a la educación, ofreciendo una plataforma accesible y segura que les permita conectarse con tutores profesionales. Nos esforzamos por proporcionar herramientas innovadoras y recursos educativos que fomenten el aprendizaje continuo y el desarrollo personal de cada estudiante."
+  },
+  {
+    "id": 2,
+    "alt": "Image 2",
+    "url": "../assets/Img-sin-Fondo-1400x500.png",
+    "title":"Vision",
+    "text":"Aspiramos a ser la plataforma líder en la conexión de estudiantes con tutores alrededor del mundo. Imaginamos un futuro donde cada estudiante tenga acceso a la mejor educación posible, gracias a una red global de tutores comprometidos y apasionados por la enseñanza. Queremos ser el puente que une el conocimiento y el aprendizaje, haciendo del mundo un lugar más educado y preparado para los desafíos del mañana."
+  },
+  {
+    "id": 3,
+    "alt": "Image 3",
+    "url": "../assets/Img-sin-Fondo-1400x500.png",
+    "title":"Filosofía",
+    "text":"Nuestra filosofía se centra en el empoderamiento del estudiante a través de la educación personalizada. Creemos que cada estudiante es único y merece una experiencia de aprendizaje adaptada a sus necesidades individuales. Por ello, brindamos una plataforma donde el estudiante tiene el control total sobre la elección de su tutor, asegurando así una educación efectiva y enriquecedora."
+  }
+]

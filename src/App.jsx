@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { React ,useState,useCallback, useEffect,useRef} from 'react'
+import { Routes,Route,Outlet,useNavigate, Navigate} from 'react-router-dom'
 import './App.css'
+import {NotFoundPage,Home,LogIn,Dashboard,SignUp} from './routes/index'
+import {DashboardHome,Settings,SearchTutor,TutoringSessions} from './routes/Dashboard/index.js'
+import {Header,NavBarDashboard} from './components/index.js'
+import { Toast } from 'primereact/toast';
+import "primereact/resources/themes/lara-light-blue/theme.css";  //theme
+import 'primeicons/primeicons.css'; //icons
+import 'primeflex/primeflex.css'; // flex
+ 
+        
 
 function App() {
-  const [count, setCount] = useState(0)
+  const toast = useRef(null)
+  const [isLogin,setIsLogin]=useState({auth:false,role:null,userid:null})
+  const navigate=useNavigate()
+  const handleAuth = useCallback((isAuth)=>{
+    setIsLogin(isAuth)
+  },[])
 
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <div className="card flex justify-content-center">
+          <Toast ref={toast} />
+        </div>
+      
+        <Routes>
+          <Route path="/" element={<><Header auth={isLogin.auth}/><Outlet/></>}>
+            <Route path="" element={<Home/>}/>
+            <Route path="login" element={isLogin.auth?<Navigate to={"/dashboard"}/>:<LogIn handleLogin={handleAuth} loginToast={toast}/>}/>
+            <Route path="sign-up" element={isLogin.auth?<Navigate to={"/dashboard"}/>:<SignUp signUpToast={toast}/>}/>
+          </Route>
+          <Route path="/dashboard/" element={!isLogin.auth?<Navigate to={"/login"}/>:<Outlet/>}>
+            <Route element={<Dashboard handleLogOut={handleAuth}/>}>
+                <Route path="" element={<DashboardHome/>}/>
+                <Route path="buscar-tutor" searchToast={toast} element={<SearchTutor/>}/>
+                <Route path="ajustes" element={<Settings/>}/>
+                <Route path="tutorías" element={<TutoringSessions/>}/>
+            </Route>
+            <Route path="*" element={<NotFoundPage/>}/>
+          </Route>
+          <Route path="*" element={<NotFoundPage/>}/>
+        </Routes>
     </>
   )
 }

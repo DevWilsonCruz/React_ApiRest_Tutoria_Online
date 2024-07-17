@@ -1,0 +1,50 @@
+.nav-bar-active{
+  max-width: 14rem;
+  min-height: 100vh;
+}
+.nav-bar-inactive{
+  max-width: 4rem;
+  min-height: 100vh;
+}
+.nav-bar-active .nav-active .nav{
+  display: flex;
+  justify-content: end;
+  min-width: 100%;
+}
+.nav-active{
+  min-width: 100%;
+}
+.nav-bar-inactive .nav-active  button{
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  margin: 10px;
+}
+.nav-bar-active .nav-active button{
+  margin: 0;
+  padding-left: 1.3rem;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+.dashboard-container{
+  padding-left: 14rem;
+  margin: 0;
+}
+.dashboard-container-expand{
+  padding-left: 4rem;
+  margin: 0;
+}
+.container-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.Nav-hola{
+  min-width: 100%;
+}
+
+
+
+
