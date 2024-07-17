@@ -5,7 +5,7 @@ const LoadImages =({item})=>{
   useEffect(()=>{
     const loadImage = async()=>{
       try{
-        const {default:image} = await import(`${item.url}`)
+        const {default:image} = await import(/* @vite-ignore */`${item.url}`)
         setPicture(image)
       }catch(error){
         console.error('Error al cargar imagen:', error)
